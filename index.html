@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamify - Video Streaming</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .video-card {
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 10px;
+        }
+        #comments {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Streamify - Video Streaming</h1>
+    
+    <h2>User Authentication</h2>
+    <input type="text" id="displayName" placeholder="Enter Display Name" required>
+    <input type="email" id="email" placeholder="Enter Email" required>
+    <input type="password" id="password" placeholder="Enter Password" required>
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="logIn()">Log In</button>
+    <button onclick="googleSignIn()">Google Sign-In</button>
+    <button onclick="logOut()">Log Out</button>
+
+    <h2>Welcome</h2>
+    <p id="userDisplay">Please log in.</p>
+
+    <h2>Add a Video</h2>
+    <input type="text" id="videoTitle" placeholder="Video Title">
+    <input type="text" id="videoURL" placeholder="Video URL (YouTube, Vimeo, MP4)">
+    <input type="text" id="category" placeholder="Category">
+    <input type="text" id="playlist" placeholder="Playlist">
+    <button onclick="addVideo()">Add Video</button>
+
+    <h2>Available Videos</h2>
+    <div id="videoContainer"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="firebase.js"></script>
+    <script src="auth.js"></script>
+    <script src="video.js"></script>
+</body>
+</html>
