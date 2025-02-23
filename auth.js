@@ -1,6 +1,7 @@
-import firebase from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-import firebaseAuth from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
-import FirebaseFirestore from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js'
+import { getAuth } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js'
+import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js'
+
 // 🔹 Sign Up (Email & Password)
 function signUp() {
     const email = document.getElementById("email").value;
