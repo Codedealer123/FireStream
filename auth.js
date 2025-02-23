@@ -2,6 +2,10 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase
 import { getAuth } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js'
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js'
 
+const app = firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+
 // 🔹 Sign Up (Email & Password)
 function signUp() {
     const email = document.getElementById("email").value;
