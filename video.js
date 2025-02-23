@@ -1,13 +1,3 @@
-//Import Firebase
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js'
-import { getAuth } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js'
-import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js'
-
-//Intialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
-const db = firebase.firestore();
-
 // 🔹 Add Video (Allow users to post videos)
 function addVideo() {
     const videoTitle = document.getElementById("videoTitle").value;
