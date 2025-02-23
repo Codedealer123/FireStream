@@ -1,3 +1,6 @@
+import firebase from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+import firebaseAuth from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+import FirebaseFirestore from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
 // Firebase Configuration (Replace with your project details)
 const firebaseConfig = {
     apiKey: "AIzaSyDwvLDYDMBRZFW3RO3CnvLuDXPiRnR7Hes",
